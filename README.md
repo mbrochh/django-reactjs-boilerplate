@@ -51,7 +51,7 @@ config.plugins = config.plugins.concat([
 ```
 
 Ready? In one terminal window, start the webpack-dev-server with
-`node server.js` and in another terminal window, start the Django devserver
+`nodejs server.js` and in another terminal window, start the Django devserver
 with `./manage.py runserver`.
 
 Make sure that you can still see "Something New!".
