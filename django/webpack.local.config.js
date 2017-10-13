@@ -11,7 +11,15 @@ config.plugins = config.plugins.concat([
 ])
 
 config.module.loaders.push(
-  { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['react-hot', 'babel'] }
+  { 
+    test: /\.jsx?$/,         // Match both .js and .jsx files
+    exclude: /node_modules/, 
+    loader: "babel", 
+    query:
+      {
+        presets:['react']
+      }
+  }
 )
 
 module.exports = config
